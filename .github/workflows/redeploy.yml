@@ -49,7 +49,7 @@ jobs:
 
       - name: Deploy to Firebase
         if: ${{ steps.check_build.outputs.files_exists == 'true' }}
-        uses: sws2apps/firebase-deployment@8bd00ef2c7fb6feb0c092f38287f00a652e0ee34
+        uses: sws2apps/firebase-deployment@31c47fb8bc4e424bba835c3f29a710d1f9607ad9
         with:
           workloadIdentityProvider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER }}
           serviceAccount: ${{ secrets.SERVICE_ACCOUNT }}
